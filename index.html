@@ -4,55 +4,132 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--CSS-->
     <link rel="stylesheet" href="styles.css">
+    <!--Font Awesome icons-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-
 </head>
 
-<body onload="typeWriter()">
+<body>
     <main>
-        <nav id="navbar">
-            <ul>
-                <li><a href="#welcome-section">About</a></li>
-                <li><a href="#projects">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="navbar nav-pills navbar-expand-lg text-uppercase fixed-top">
+            <button class="navbar-toggle navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#about">About</a>
+                    <a class="nav-item nav-link" href="#education">Education</a>
+                    <a class="nav-item nav-link" href="#projects">Portfolio</a>
+                    <a class="nav-item nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
         </nav>
-        <section id="welcome-section">
+
+
+        <section id="about">
             <h1>I'm Yeshas M P</h1>
-            <p id="demo">Code, Coffe and Contribute...</p>
+            <p id="demo">Code, Coffe and Contribute..</p>
+        </section>
+
+        <section id="education" class="education-section">
+            <h2>Education</h2>
+            <div class="eng row">
+                <div class="col-sm">
+                    <h3>PES College of Engineering, Mandya</h3>
+                    <h4>Bachelor of Engineering in Electronics and Communication Engineering</h4>
+                    <h5>8.1 CGPA</h5>
+                    <p>2017-2020</p>
+                </div>
+            </div>
+            <div class="dip row">
+                <div class="col-sm">
+                    <h3>Govt CPC Polytechnic, Mysore</h3>
+                    <h4>Diploma in Electronics and Communication Engineering</h4>
+                    <h5>80%</h5>
+                    <p>2014-2017</p>
+                </div>
+            </div>
         </section>
 
         <section id="projects" class="project-section">
             <h2>My Portfolio</h2>
+
+            <h3>App</h3>
+            <div class="project-grid">
+                <a href="https://github.com/yeshasprabhakar/ToDo" target="_blank">
+                    <div class="row">
+                        <div class="col-sm">
+                            <img class="project-image" src="https://i.postimg.cc/sgC1QbHV/main-light.jpg" alt="project">
+                        </div>
+                        <div class="col-sm d-none d-lg-block">
+                            <img class="project-image" src="https://i.postimg.cc/rsvs9H8N/main-dark.jpg" alt="project">
+                        </div>
+                        <div class="col-sm d-none d-lg-block">
+                            <img class="project-image" src="https://i.postimg.cc/zDMy5ynH/dialog-light.jpg" alt="project">
+                        </div>
+                        <div class="col-sm d-none d-lg-block">
+                            <img class="project-image" src="https://i.postimg.cc/LXQnJXw7/dialog-dark.jpg" alt="project">
+                        </div>
+                    </div>
+                    <p class="project-title">ToDo App
+                        <br>
+                        <span class="sub-title">ToDo is an open source Android application to quickly add notes, memos and reminders.</span>
+                    </p>
+                </a>
+            </div>
+
+            <h3>Web</h3>
             <div class="project-grid">
                 <a href="https://codepen.io/me_groot/full/JVyjyQ" target="_blank">
                     <img class="project-image" src="https://i.postimg.cc/cLgwhghw/tribute.png" alt="project">
-                    <p class="project-tile">Tribute Page</p>
+                    <p class="project-title">Tribute Page</p>
                 </a>
 
                 <a href="https://codepen.io/me_groot/full/zVwEXR" target="_blank">
                     <img class="project-image" src="https://i.postimg.cc/2yg8S6WN/product.png" alt="project">
-                    <p class="project-tile">Business Landing Page</p>
+                    <p class="project-title">Business Landing Page</p>
                 </a>
 
                 <a href="https://codepen.io/me_groot/full/jRxzmX" target="_blank">
                     <img class="project-image" src="https://i.postimg.cc/fWqVPWJK/form.png" alt="project">
-                    <p class="project-tile">Survey Form</p>
+                    <p class="project-title">Survey Form</p>
                 </a>
 
+            </div>
+
+            <h3>Electronics</h3>
+            <div class="project-grid">
+                <div class="row">
+                    <div class="col-sm">
+                        <a href="https://www.hackster.io/yeshas-m-p/air-quality-monitoring-system-using-bolt-iot-872c4f" target="_blank">
+                            <img class="project-image" src="https://i.postimg.cc/85NyjZ80/fred-rivett-PP-i3r-Ba8-CU-unsplash.jpg" width=500px height=500px alt="project">
+                            <p class="project-title">Air Quality Monitoring System Using Bolt IoT
+                                <br>
+                                <span class="sub-title">A System designed to alert the user about possible Air Quality condition of particular city.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-sm">
+                        <a href="https://drive.google.com/file/d/1gR2XYu1hhF3XpJ50C9jdiMv5FowmSvjC/view?usp=sharing" target="_blank">
+                            <img class="project-image eimg" src="https://i.postimg.cc/WzhzqKMg/Robo-surveillance.jpg" alt="project">
+                            <p class="project-title">Intelligent Personal Assistant and Surveillance Robot
+                                <br>
+                                <span class="sub-title">A remote controlled real time video monitoring robot desgined using Arduino and RF Communication </span>
+                            </p>
+                        </a>
+                    </div>
+                </div>
             </div>
 
         </section>
         <section id="contact" class="contact-section">
             <div class="contact-section-header">
                 <h2>Let's connect</h2>
-            </div>
-            <div class="contact-links">
                 <a id="profile-link" href="https://www.linkedin.com/in/yeshas-prabhakar/" target="_blank" class="btn contact-details">
-                    <i class="fab fa-linkedin"></i> LinkedIn</a>
+                    LinkedIn <i class="fab fa-linkedin"></i></a>
             </div>
         </section>
 
@@ -61,9 +138,10 @@
                 <span>Coded by Yeshas Prabhakar with <i class="fas fa-heart"></i></span>
             </div>
         </footer>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+        <!--Bootstrap-->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     </main>
 </body>
 
