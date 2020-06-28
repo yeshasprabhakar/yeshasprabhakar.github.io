@@ -35,9 +35,10 @@ h1 {
     font-weight: 800;
 }
 
+
 @media screen and (max-width: 600px) {
     h1 {
-        font-size: 50px;
+        font-size: 40px;
         font-weight: 600;
     }
 }
@@ -55,7 +56,14 @@ h1 {
 
 #about > p {
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+    #about > p {
+        font-size: 15px;
+        font-weight: 400;
+    }
 }
 
 /*Styling education section*/
@@ -119,7 +127,7 @@ h1 {
 
 @media screen and (max-width: 600px) {
     .project-grid .eimg {
-        height: 400px;
+        height: 300px;
     }
 }
 
@@ -184,10 +192,8 @@ img {
     object-fit: cover;
 }
 
-
 /*Text Cursor Animation*/
 #demo {
-    font-weight: 300;
     border-right: solid 3px rgba(0, 0, 0, .75);
     overflow: hidden;
     white-space: nowrap;
@@ -204,6 +210,18 @@ img {
 
     to {
         width: 472px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    @keyframes animated-text {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 240px;
+        }
     }
 }
 
